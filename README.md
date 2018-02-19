@@ -32,8 +32,8 @@ This vimrc ships with its own cheat-sheet. To access the cheat type `:help cheat
 
 The plugins require the following utilities to establish their full potential:
 
- * ctags
- * ag
+ * `ctags`
+ * `ag`
 
 
 ## Command-line tools not on default search path
