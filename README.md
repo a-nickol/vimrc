@@ -12,8 +12,6 @@ Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the
 
 ## How to update to latest version?
 
-Simply just do a git rebase!
-
     cd ~/.vim_runtime
     git pull --rebase
     vim +PlugUpdate +qall
@@ -23,6 +21,8 @@ Simply just do a git rebase!
 Do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that refernce `.vim_runtime` in your `~/.vimrc`
+* Uninstall and remove `.powerline_fonts`
+* Uninstall and remove `.fzf`
 
 ## Build-in Cheat-Sheet
 
