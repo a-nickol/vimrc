@@ -45,8 +45,17 @@ fi
 
 touch ~/.ctrlp
 
-vim +PlugInstall +qall
+vim -u $INSTALL_DIR/maintenance.vim +PlugInstall +qall
 
-command -v ag >/dev/null 2>&1 || printf "It is recommended to install ag, the_silver_searcher.\ngithub: https://github.com/ggreer/the_silver_searcher\ndebian: apt-get install silversearcher-ag\nfedora: dnf install the_silver_searcher\n";
-command -v ctags >/dev/null 2>&1 || printf "It is recommended to install ctags.\ndebian: sudo apt-get install exuberant-ctags\nfedora: dnf install ctags\n";
+if ! [ -x "$(command -v ag)" ]; then
+  printf "It is recommended to install ag, the_silver_searcher.\n"
+  printf "github: https://github.com/ggreer/the_silver_searcher\n"
+  printf "debian: apt-get install silversearcher-ag\n"
+  printf "fedora: dnf install the_silver_searcher\n\n"
+fi
 
+if ! [ -x "$(command -v ctags)" ]; then
+  printf "It is recommended to install ctags.\n"
+  printf "debian: sudo apt-get install exuberant-ctags\n"
+  printf "fedora: dnf install ctags\n\n"
+fi
