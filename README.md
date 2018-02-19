@@ -16,6 +16,7 @@ Simply just do a git rebase!
 
     cd ~/.vim_runtime
     git pull --rebase
+    vim +PlugUpdate +qall
 
 ## How to uninstall
 
