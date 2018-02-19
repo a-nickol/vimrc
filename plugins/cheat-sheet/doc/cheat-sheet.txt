@@ -1,0 +1,100 @@
+*cheat-sheet.txt*	               Build-in Cheat-Sheet for VIM version 7.4
+*cheat-sheet* *cheat*                       last updated: 2017-02-22 22:17:27 +0100===============================================================================
+        .__                   __                   .__                   __  ~
+   ____ |  |__   ____ _____ _/  |_            _____|  |__   ____   _____/  |_~
+ _/ ___\|  |  \_/ __ \\__  \\   __\  ______  /  ___/  |  \_/ __ \_/ __ \   __\~
+ \  \___|   Y  \  ___/ / __ \|  |   /_____/  \___ \|   Y  \  ___/\  ___/|  | ~
+  \___  >___|  /\___  >____  /__|           /____  >___|  /\___  >\___  >__| ~
+      \/     \/     \/     \/                    \/     \/     \/     \/     ~
+
+                         Cheat sheet for Vim.
+===============================================================================
+CONTENTS                                                   *cheat-sheet-contents*
+
+    1. Intro...........................................|cheat-intro|
+    1. Normal Mode.....................................|cheat-normal|
+    2. Visual Mode.....................................|cheat-visual|
+    3. Insert Mode.....................................|cheat-insert|
+    4. Registers.......................................|cheat-register|
+    5. Notes...........................................|cheat-notes|
+    6. Rebuilding this file
+
+===============================================================================
+INTRO                                                               *cheat-intro*
+
+Dies ist ein in vim integriertes Cheat Sheet, welches die wichtigsten Befehle,
+die wichtigsten Tastenkürzel und Informationen zu dieser vimrc-Distribution
+zusammenfasst.
+
+Alle in der vimrc getätigten Mappings werden hier noch einmal aufgeführt und
+kurz beschrieben.
+
+Zunächst ein paar Hinweise zu dieser vimrc-Distribution.
+
+Die vimrc ist in mehrere Teile aufgebaut. Es gibt einen vorgelagerten
+`~/vim_runtime/vimrc.before.vim` und nachgelagerten Teil
+`~/vim_runtime/vimrc.after.vim` sowie einen Hauptteil. Die Hauptdateien liegen
+in dem Ordner `~/vim_runtime/vimrc.d/`.
+
+Plugins, die von anderen Entwickler kommen, liegen im Ordner `bundle`.
+Plugins, die explizit für diese Distribution erstellt wurden, liegen im Ordner
+`plugins`. Um die neuste Version der externen Plugins zu bekommen, kann das
+Skript `update_bundles.py` ausgeführt werden. Dieses Skript läd die neuste
+Version der Plugins von github runter und packt diese in den `bundle` Ordner.
+
+Als Leader wird <space> verwendet. Bei den Tastenkombinationen ist der <leader>
+bereits ersetzt!
+
+===============================================================================
+NORMAL MODE                                                        *cheat-normal*
+
+ <leader>w
+
+                        speichert den aktuellen Buffer
+
+ <leader>ww
+
+                        formatiert den Text und speichert den aktuellen Buffer
+
+ ö
+
+                        navigiert zurück, z.B. mit [b
+
+ ä
+
+                        navigiert nach vorne, z.B. mit [b
+
+ Ö
+
+                        springt zur vorherigen Sektion
+
+ Ä
+
+                        springt zur nächsten Sektion
+
+ö und ä
+
+===============================================================================
+VISUAL MODE                                                        *cheat-visual*
+
+
+===============================================================================
+INSERT MODE                                                        *cheat-insert*
+
+
+===============================================================================
+COMMAND LINE                                                 *cheat-command-line*
+
+
+<C-R><C-W> Einfügen von Wort aus Buffe
+
+
+===============================================================================
+REGISTERS                                                        *cheat-register*
+
+
+   - *: primäre Zwischenablage des Systems
+   - +: sekundäre Zwischenablage des Systems |
+   - =: expression
+
+         vim:tw=78:ts=8:ft=help:norl:

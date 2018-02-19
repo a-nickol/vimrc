@@ -1,0 +1,101 @@
+*cheat-sheet.txt*	               Build-in Cheat-Sheet for VIM version 7.4
+*cheat-sheet* *cheat*                       last updated: <%= @last_change %>
+===============================================================================
+        .__                   __                   .__                   __  ~
+   ____ |  |__   ____ _____ _/  |_            _____|  |__   ____   _____/  |_~
+ _/ ___\|  |  \_/ __ \\__  \\   __\  ______  /  ___/  |  \_/ __ \_/ __ \   __\~
+ \  \___|   Y  \  ___/ / __ \|  |   /_____/  \___ \|   Y  \  ___/\  ___/|  | ~
+  \___  >___|  /\___  >____  /__|           /____  >___|  /\___  >\___  >__| ~
+      \/     \/     \/     \/                    \/     \/     \/     \/     ~
+
+                         Cheat sheet for Vim.
+===============================================================================
+CONTENTS                                                   *cheat-sheet-contents*
+
+    1. Intro...........................................|cheat-intro|
+    1. Normal Mode.....................................|cheat-normal|
+    2. Visual Mode.....................................|cheat-visual|
+    3. Insert Mode.....................................|cheat-insert|
+    4. Registers.......................................|cheat-register|
+    5. Notes...........................................|cheat-notes|
+    6. Rebuilding this file
+
+===============================================================================
+INTRO                                                               *cheat-intro*
+
+Dies ist ein in vim integriertes Cheat Sheet, welches die wichtigsten Befehle,
+die wichtigsten Tastenkürzel und Informationen zu dieser vimrc-Distribution
+zusammenfasst.
+
+Alle in der vimrc getätigten Mappings werden hier noch einmal aufgeführt und
+kurz beschrieben.
+
+Zunächst ein paar Hinweise zu dieser vimrc-Distribution.
+
+Die vimrc ist in mehrere Teile aufgebaut. Es gibt einen vorgelagerten
+`~/vim_runtime/vimrc.before.vim` und nachgelagerten Teil
+`~/vim_runtime/vimrc.after.vim` sowie einen Hauptteil. Die Hauptdateien liegen
+in dem Ordner `~/vim_runtime/vimrc.d/`.
+
+Plugins, die von anderen Entwickler kommen, liegen im Ordner `bundle`.
+Plugins, die explizit für diese Distribution erstellt wurden, liegen im Ordner
+`plugins`. Um die neuste Version der externen Plugins zu bekommen, kann das
+Skript `update_bundles.py` ausgeführt werden. Dieses Skript läd die neuste
+Version der Plugins von github runter und packt diese in den `bundle` Ordner.
+
+Als Leader wird <space> verwendet. Bei den Tastenkombinationen ist der <leader>
+bereits ersetzt!
+
+===============================================================================
+NORMAL MODE                                                        *cheat-normal*
+
+<%
+def table arr
+  if arr.empty?
+    return ""
+  end
+  t = Terminal::Table.new :rows => arr
+  t.style = { :width => 79, :border_x => "", :border_i => "", :border_y => "" }
+  t.to_s.split("\n")[1..-1].join("\n")
+end
+
+def format arr
+  arr.join("\n")
+end 
+%>
+<%= table(@normal_mode_keys) %>
+
+
+<%= format(@normal_mode) %>
+
+
+===============================================================================
+VISUAL MODE                                                        *cheat-visual*
+
+<%= table(@visual_mode_keys) %>
+<%= format(@visual_mode) %>
+
+===============================================================================
+INSERT MODE                                                        *cheat-insert*
+
+<%= table(@insert_mode_keys) %>
+<%= format(@insert_mode) %>
+
+===============================================================================
+COMMAND LINE                                                 *cheat-command-line*
+
+<%= format(@command_line) %>
+
+<C-R><C-W> Einfügen von Wort aus Buffe
+
+
+===============================================================================
+REGISTERS                                                        *cheat-register*
+
+<%= format(@registers) %>
+
+   - *: primäre Zwischenablage des Systems
+   - +: sekundäre Zwischenablage des Systems |
+   - =: expression
+
+<%= @vim_mode_line %>

@@ -1,0 +1,5 @@
+tmp/undodir*
+tmp/yankring_history_v2.txt
+tags
+vimrc.d/local.vim
+plugged
