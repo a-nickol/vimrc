@@ -24,10 +24,6 @@ Do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that refernce `.vim_runtime` in your `~/.vimrc`
 
-## Build-in Cheat-Sheet
-
-This vimrc ships with its own cheat-sheet. To access the cheat type `:help cheat-sheet` or `<F12>`.
-
 ## Additional tools
 
 The plugins require the following utilities to establish their full potential:

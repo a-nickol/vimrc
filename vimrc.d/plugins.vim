@@ -1,12 +1,6 @@
 silent! call plug#begin('~/.vim_runtime/plugged')
 
 """"""""""""""""""""""""""""""""
-" Cheat-Sheet
-""""""""""""""""""""""""""""""""
-
-Plug '~/.vim_runtime/plugins/cheat-sheet'
-
-""""""""""""""""""""""""""""""""
 " language support
 """"""""""""""""""""""""""""""""
 

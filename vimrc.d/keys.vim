@@ -163,13 +163,6 @@ nnoremap <leader>se :setlocal spell! spelllang=en<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Help / Cheat-Sheet
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" @key öffnet den Cheat-Sheet
-"nnoremap <F12> :help cheat-sheet<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colorthemes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " @key wechselt das Farbschema
