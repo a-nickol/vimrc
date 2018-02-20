@@ -12,27 +12,21 @@ Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the
 
 ## How to update to latest version?
 
-Simply just do a git rebase!
-
     cd ~/.vim_runtime
     git pull --rebase
     vim +PlugUpdate +qall
 
-## How to uninstall
+## How to uninstall?
 
 Do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that refernce `.vim_runtime` in your `~/.vimrc`
+* Uninstall and remove `.powerline_fonts`
+* Uninstall and remove `.fzf`
 
-## Additional tools
+## FAQ
 
-The plugins require the following utilities to establish their full potential:
-
- * ctags
- * ag
-
-
-## Command-line tools not on default search path
+### Some command line tools cannot be found!
 
 If you don't have `git`, `grep` or `ag` available on your `$PATH`, you can set the commands directly in your `local.vim` file for some of the plugins.
 
