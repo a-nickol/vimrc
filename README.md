@@ -16,7 +16,7 @@ Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the
     git pull --rebase
     vim +PlugUpdate +qall
 
-## How to uninstall
+## How to uninstall?
 
 Do following:
 * Remove `~/.vim_runtime`
@@ -28,15 +28,9 @@ Do following:
 
 This vimrc ships with its own cheat-sheet. To access the cheat type `:help cheat-sheet` or `<F12>`.
 
-## Additional tools
+## FAQ
 
-The plugins require the following utilities to establish their full potential:
-
- * `ctags`
- * `ag`
-
-
-## Command-line tools not on default search path
+### Some command line tools cannot be found!
 
 If you don't have `git`, `grep` or `ag` available on your `$PATH`, you can set the commands directly in your `local.vim` file for some of the plugins.
 
