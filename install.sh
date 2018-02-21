@@ -51,11 +51,15 @@ if ! [ -x "$(command -v ag)" ]; then
   printf "It is recommended to install ag, the_silver_searcher.\n"
   printf "github: https://github.com/ggreer/the_silver_searcher\n"
   printf "debian: apt-get install silversearcher-ag\n"
-  printf "fedora: dnf install the_silver_searcher\n\n"
+  printf "fedora: dnf install the_silver_searcher\n"
+  printf "arch: pacman -S the_silver_searcher\n"
+  printf "\n"
 fi
 
 if ! [ -x "$(command -v ctags)" ]; then
   printf "It is recommended to install ctags.\n"
   printf "debian: sudo apt-get install exuberant-ctags\n"
-  printf "fedora: dnf install ctags\n\n"
+  printf "fedora: dnf install ctags\n"
+  printf "arch: pacman -S ctags\n"
+  printf "\n"
 fi
