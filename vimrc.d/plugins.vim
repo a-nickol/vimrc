@@ -13,6 +13,9 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'chase/vim-ansible-yaml'
 
+" Rust
+Plug 'rust-lang/rust.vim'
+
 " Python
 Plug 'hdima/python-syntax'
 
