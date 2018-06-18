@@ -180,7 +180,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 """"""""""""""""""""""""""""""""
 
 " dispatch commands
-Plug 'tpope/vim-dispatch'
+"Plug 'tpope/vim-dispatch'
 
 """"""""""""""""""""""""""""""""
 " terminal support
