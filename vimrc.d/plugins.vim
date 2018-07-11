@@ -15,7 +15,6 @@ Plug 'chase/vim-ansible-yaml'
 
 " Rust
 Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
 
 " Python
 Plug 'hdima/python-syntax'
@@ -177,13 +176,6 @@ Plug 'henrik/vim-qargs'
 Plug 'maxbrunsfeld/vim-yankstack'
 
 """"""""""""""""""""""""""""""""
-" asynchronous execution
-""""""""""""""""""""""""""""""""
-
-" dispatch commands
-"Plug 'tpope/vim-dispatch'
-
-""""""""""""""""""""""""""""""""
 " terminal support
 """"""""""""""""""""""""""""""""
 
@@ -201,16 +193,8 @@ Plug 'easymotion/vim-easymotion'
 " css colors
 """"""""""""""""""""""""""""""""
 
+" display css colors
 Plug 'ap/vim-css-color'
-
-""""""""""""""""""""""""""""""""
-" deactivated plugins
-""""""""""""""""""""""""""""""""
-
-" code snippets
-"Plug 'garbas/vim-snipmate'
-" code snippets for vim-snipmate
-"Plug 'honza/vim-snippets'
 
 call plug#end()
 

@@ -8,7 +8,8 @@
 
 " setting theme
 set background=dark
-colorscheme heroku
+"colorscheme heroku
+colorscheme molokai_dark
 
 """"""""""""""""""""""
 " => Airline
