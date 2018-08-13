@@ -19,6 +19,9 @@ Plug 'rust-lang/rust.vim'
 " Python
 Plug 'hdima/python-syntax'
 
+" Handlebars
+Plug 'mustache/vim-mustache-handlebars'
+
 " Javascript, Coffeescript, Typescript, etc.
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
