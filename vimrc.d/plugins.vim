@@ -9,23 +9,26 @@ Plug 'othree/html5.vim'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
 " Ruby
-Plug 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'chase/vim-ansible-yaml'
 
 " Rust
-Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 " Python
-Plug 'hdima/python-syntax'
+Plug 'hdima/python-syntax', { 'for': 'python' }
+
+" Handlebars
+Plug 'mustache/vim-mustache-handlebars', { 'for': 'html' }
 
 " Javascript, Coffeescript, Typescript, etc.
-Plug 'pangloss/vim-javascript'
-Plug 'kchmck/vim-coffee-script'
-Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffescript' }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
 " Markdown
-Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 
 " syntax checking plugin
 Plug 'scrooloose/syntastic'

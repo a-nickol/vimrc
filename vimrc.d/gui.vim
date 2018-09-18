@@ -49,10 +49,12 @@ endif
 
 
 " Set font according to system
+" Paste font into buffer: :put =&guifont or <C-R>=&guifont
 if has("win16") || has("win32")
   set gfn=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
 elseif has("gui_gtk2")
-  set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+"  set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+  set gfn=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
 elseif has("linux")
 elseif has("unix")
 endif
