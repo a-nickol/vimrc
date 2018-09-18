@@ -44,6 +44,12 @@ Plug 'majutsushi/tagbar'
 " new commenting operations
 Plug 'scrooloose/nerdcommenter'
 
+" Jenkins-File
+Plug 'martinda/Jenkinsfile-vim-syntax'
+
+" Groovy
+Plug 'vim-scripts/groovy.vim'
+
 """"""""""""""""""""""""""""""""
 " fuzzy search tools
 """"""""""""""""""""""""""""""""
