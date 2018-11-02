@@ -5,13 +5,12 @@ silent! call plug#begin('~/.vim_runtime/plugged')
 """"""""""""""""""""""""""""""""
 
 " HTML
-Plug 'othree/html5.vim'
+Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
 " Ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'chase/vim-ansible-yaml'
 
 " Rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
@@ -48,10 +47,15 @@ Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
 
 " Jenkins-File
-Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'jenkins' }
 
 " Groovy
-Plug 'vim-scripts/groovy.vim'
+Plug 'vim-scripts/groovy.vim', { 'for': 'groovy' }
+
+" display css colors
+Plug 'ap/vim-css-color'
+
+Plug 'asciidoc/vim-asciidoc', { 'for': 'asciidoc' }
 
 """"""""""""""""""""""""""""""""
 " fuzzy search tools
@@ -197,13 +201,6 @@ Plug 'drmikehenry/vim-fixkey'
 
 " adds advanced visual movement commands
 Plug 'easymotion/vim-easymotion'
-
-""""""""""""""""""""""""""""""""
-" css colors
-""""""""""""""""""""""""""""""""
-
-" display css colors
-Plug 'ap/vim-css-color'
 
 call plug#end()
 

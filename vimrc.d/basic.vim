@@ -35,7 +35,7 @@ else
   set wildignore+=.git\*,.hg\*,.svn\*
 endif
 
-"Always show current position
+" Always show current position
 set ruler
 
 " Height of the command bar
