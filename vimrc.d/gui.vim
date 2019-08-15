@@ -52,7 +52,7 @@ endif
 " Paste font into buffer: :put =&guifont or <C-R>=&guifont
 if has("win16") || has("win32")
   set gfn=Source_Code_Pro:h10:cANSI:qDRAFT
-elseif has("gui_gtk2")
+elseif has("gui_gtk2") || has("gui_gtk3")
 "  set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
   set gfn=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
 elseif has("linux")
