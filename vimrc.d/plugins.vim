@@ -29,9 +29,6 @@ Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 " Markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 
-" syntax checking plugin
-Plug 'scrooloose/syntastic'
-
 " %-operator will mach if endif etc.
 Plug 'vim-scripts/matchit.zip'
 
@@ -45,12 +42,6 @@ Plug 'majutsushi/tagbar'
 
 " new commenting operations
 Plug 'scrooloose/nerdcommenter'
-
-" Jenkins-File
-Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'jenkins' }
-
-" Groovy
-Plug 'vim-scripts/groovy.vim', { 'for': 'groovy' }
 
 " display css colors
 Plug 'ap/vim-css-color'
@@ -112,21 +103,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 """"""""""""""""""""""""""""""""
-" calculation
-""""""""""""""""""""""""""""""""
-
-" HowMuch - Calculates visual selected formulars
-Plug 'sk1418/HowMuch'
-
-""""""""""""""""""""""""""""""""
-" Vimwiki
-""""""""""""""""""""""""""""""""
-
-" Vimwiki with Calendar integration
-Plug 'vimwiki/vimwiki'
-Plug 'mattn/calendar-vim', { 'on': 'Calendar' }
-
-""""""""""""""""""""""""""""""""
 " search
 """"""""""""""""""""""""""""""""
 
@@ -139,13 +115,6 @@ Plug 'mileszs/ack.vim'
 
 " + key expands selection
 Plug 'terryma/vim-expand-region'
-
-""""""""""""""""""""""""""""""""
-" text alignment
-""""""""""""""""""""""""""""""""
-
-" algin text on regex
-Plug 'godlygeek/tabular'
 
 """"""""""""""""""""""""""""""""
 " insert completion
@@ -175,13 +144,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 
 """"""""""""""""""""""""""""""""
-" quicklist tools
-""""""""""""""""""""""""""""""""
-
-" execute commands on quicklist
-Plug 'henrik/vim-qargs'
-
-""""""""""""""""""""""""""""""""
 " clipboard tools
 """"""""""""""""""""""""""""""""
 
@@ -194,13 +156,6 @@ Plug 'maxbrunsfeld/vim-yankstack'
 
 " adds support for modified keys in several terminals
 Plug 'drmikehenry/vim-fixkey'
-
-""""""""""""""""""""""""""""""""
-" movement
-""""""""""""""""""""""""""""""""
-
-" adds advanced visual movement commands
-Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
