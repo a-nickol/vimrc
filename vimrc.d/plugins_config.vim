@@ -142,37 +142,6 @@ augroup END
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimwiki
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"mapleader.vim -> let g:vimwiki_map_prefix = '<Leader>e'
-nmap <Leader>ei <Plug>VimwikiDiaryIndex
-
-nmap <Leader>di <Plug>VimwikiDiaryIndex
-nmap <Leader>d <Plug>VimwikiMakeDiaryNote
-nmap <Leader>dy <Plug>VimwikiMakeYesterdayDiaryNote
-nmap <Leader>dd <Plug>VimwikiDiaryGenerateLinks
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Calendar
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! ToggleCalendar()
-  execute ":Calendar"
-  if exists("g:calendar_open")
-    if g:calendar_open == 1
-      execute "q"
-      unlet g:calendar_open
-    else
-      g:calendar_open = 1
-    end
-  else
-    let g:calendar_open = 1
-  end
-endfunction
-nnoremap <leader>dc :call ToggleCalendar()<CR>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Unimpaired
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
