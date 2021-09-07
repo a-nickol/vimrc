@@ -3,7 +3,7 @@
 ## How to install?
 This vimrc includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
-    git clone https://github.com/HansPeterIngo/vimrc.git ~/.vim_runtime
+    git clone https://github.com/anickol/vimrc.git ~/.vim_runtime
     sh ~/.vim_runtime/install.sh
 
 ## How to install on Windows?
